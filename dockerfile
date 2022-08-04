@@ -9,6 +9,7 @@ COPY . .
 # expor a porta de comunicação
 EXPOSE 5000
 
-RUN npm i 
+RUN npm i
+
 #só executa quando rodarmos a imagem
-CMD ["node", "dir/index.js"] 
+CMD ["npm", "run", "start"] 
